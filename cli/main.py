@@ -765,7 +765,7 @@ def run_analysis():
             timestamp, message_type, content = obj.messages[-1]
             content = content.replace("\n", " ")  # Replace newlines with spaces
             with open(log_file, "a") as f:
-                f.write(f"{timestamp} [{message_type}] {content}\n")
+                f.write(f"{timestamp} [{message_type}] {content.encode('utf-8')}\n")
         return wrapper
     
     def save_tool_call_decorator(obj, func_name):
@@ -788,7 +788,7 @@ def run_analysis():
                 content = obj.report_sections[section_name]
                 if content:
                     file_name = f"{section_name}.md"
-                    with open(report_dir / file_name, "w") as f:
+                    with open(report_dir / file_name, "w", encoding='utf-8') as f:
                         f.write(content)
         return wrapper
 
