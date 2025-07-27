@@ -146,6 +146,14 @@ An interface will appear showing results as they load, letting you track the age
   <img src="assets/cli/cli_transaction.png" width="100%" style="display: inline-block; margin: 0 2%;">
 </p>
 
+### CMD Usage
+
+You can also try out the CMD directly by running. It updates 'portfolio' google sheet online:
+```bash
+python -m main -l 'custom' --batch 2
+```
+
+
 ## TradingAgents Package
 
 ### Implementation Details
