@@ -150,7 +150,10 @@ An interface will appear showing results as they load, letting you track the age
 
 You can also try out the CMD directly by running. It updates 'portfolio' google sheet online:
 ```bash
-python -m main -l 'custom' --batch 2
+python -m main --batch 2 --list 'focus' --sheetname 'adhoc'
+batch=1, start column is 'A'. batch=2: the start column is 'C'. default is 1. should not be 0.
+sheetname: 'adhoc', 'qqq', 'spy'. the default is 'adhoc'
+list: 'focus', 'custom'. default is 'test'
 ```
 
 

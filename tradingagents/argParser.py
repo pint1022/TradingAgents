@@ -21,6 +21,8 @@ parser.add_argument("--date", type=valid_date, default=date.today(),
                     help="Date in YYYY-MM-DD format")      
 parser.add_argument('--list', '-l', metavar='LIST', default='test',
                         help='list of stock groups: sp500, dow or all')
-parser.add_argument('--batch', type=int, default=0,
-                    help='start column (default: 0)')
+parser.add_argument('--batch', type=int, default=1, choices=range(1, 11),
+                    help='start column (default: 1)')
+parser.add_argument('--sheetname', type=str, default='adhoc',
+                    help='the sheet to store the data')
                         
