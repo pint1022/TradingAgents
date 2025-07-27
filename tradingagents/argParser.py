@@ -25,4 +25,15 @@ parser.add_argument('--batch', type=int, default=1, choices=range(1, 11),
                     help='start column (default: 1)')
 parser.add_argument('--sheetname', type=str, default='adhoc',
                     help='the sheet to store the data')
+parser.add_argument('--llmprovider', type=str, default='openai',
+                    help='the model provider')
+parser.add_argument('--llmdeep', type=str, default='gpt-4.1-mini',
+                    help='the model used in deep think')
+parser.add_argument('--llmquick', type=str, default='gpt-4.1-mini',
+                    help='the model used in quick think')
+parser.add_argument("--startdate", type=valid_date, default=date.today(), 
+                    help="Date in YYYY-MM-DD format") 
+parser.add_argument("--enddate", type=valid_date, default=date.today(), 
+                    help="Date in YYYY-MM-DD format") 
+
                         
