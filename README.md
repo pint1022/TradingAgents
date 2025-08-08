@@ -151,7 +151,10 @@ An interface will appear showing results as they load, letting you track the age
 You can also try out the CMD directly by running. It updates 'portfolio' google sheet online:
 ## Write to google sheet
 ```bash
-python -m main --batch 2 --list 'focus' --sheetname 'adhoc'
+python -m main --batch 1 --list 'focus' --sheetname 'adhoc'
+
+python -m main --batch 1 --list 'focus' --sheetname 'August-12-2025'
+
 batch=1, start column is 'A'. batch=2: the start column is 'C'. default is 1. should not be 0.
 sheetname: 'adhoc', 'qqq', 'spy'. the default is 'adhoc'
 list: 'focus', 'custom'. default is 'test'
@@ -160,6 +163,10 @@ list: 'focus', 'custom'. default is 'test'
 
 ```bash
 python -m main --list preprocess --startdate "2024-12-01" --enddate="2024-12-05" --llmprovider "openai" --llmdeep "gpt-4.1-nano" --llmquick "gpt-4.1-nano"
+```
+
+```bash
+ python -m main --list preprocess --startdate "2025-3-11" --enddate="2025-6-10"
 ```
 
 the output file is stored at the default data directory in configuration. "~/tradindagents/data/training

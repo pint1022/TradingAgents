@@ -17,7 +17,22 @@ sys.path.insert(0, '/home/steven/lib/')
 
 # Memorize mistakes and reflect
 # ta.reflect_and_remember(1000) # parameter is the position returns
-
+core = ["COIN", "TSLA", "MSTR","UNH","COST","GOOG", "NVDA","META"]
+energy = ["GUSH", "CF", "EQT","OXY","SEDG","VST","CEG","LEU"]
+semi = ["QCOM","LRCX","ASML","AMD","SOXL","TSM","SMCI","AVGO","MRVL"]
+index = ["SPY","QQQ","TQQQ", "SQQQ","IWM"]
+fin = ["BLK","BX","TLT","JPM","GS","CRCL","HOOD","SOFI","FUTU"]
+hot = ["SHOP","CRCL","U","UPST"]
+btc = ["BTC-USD","MSTR","ETH-USD"]
+software = ["MSFT","PLTR"]
+base = ["HD","KO","MCD","PFE"]
+bio = ["XBI","TMDX","HIMS","TEM"]
+cloud = ["OKTA","DDOG","DASH","NOW","CRWV"]
+robot=["SERV"]
+dron=["AVAV","ONDS","RCAT","UNMC"]
+ai=["APP","BBAI","FIG"]
+neuk=["SMR","LTBR","OKLO","NNE"]
+quantum = ["ionq","rgti","qbts"]
 
 def main():
     args = parser.parse_args()
@@ -51,26 +66,26 @@ def main():
         "quantum":quantum,
         "software": software,
         "hot": hot,
+        "cloud": cloud,
+        "base": base,
         "btc": btc,
         "benchmark": ['spy','msft','tsla']}
     groups = {
-        # "core", 
-        # "energy", 
-        # "semi", 
-        # "index",
-        # "fin", 
-        # "hot", 
-        # "btc",
-        # "software", 
-        # "base",
-        # "bio",
-        # "dron",
-        # "ai",
-        # "neuk",
-        # "quantum",
-        # "cloud", 
-        # "custom",
-        "benchmark"
+        "core", 
+        "energy", 
+        "semi", 
+        "index",
+        "fin", 
+        "hot", 
+        "btc",
+        "software", 
+        "base",
+        "bio",
+        "dron",
+        "ai",
+        "neuk",
+        "quantum",
+        "cloud"
         }
     
     # Initialize with custom config
